@@ -88,5 +88,20 @@ a.anchor {
 
 #bigBullets > ul > li {
 	list-style-type: none;
-	
+	background-color: red;
+	width: 60%;
+	margin: 5px;
 }
+
+@media (min-width: 500px) {
+	#bigBullets > ul > li {
+		width: 30%;
+	}
+}
+
+#bigBullets > ul > li::before {
+	content: "";
+	padding-bottom: 100%;
+	display: inline-block;
+	vertical-align: top;
+  }

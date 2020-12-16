@@ -4,18 +4,17 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 2em 1fr;
 	border: thin grey solid;
-	box-shadow: 0 0.5em 0.5em 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 8px 8px 1px 0px rgb(0 0 0 / 15%);
 	border-radius: 0.5em;
 	margin: 3em auto 3em auto;
 	background-color: rgba(0, 0, 0, 0.007);
-	height: 150px;
+	height: 200px;
     width: 90%;
 }
 
 
 @media (min-width : 500px) {
 	#card {
-		height : 200px;
 		max-width: 360px;
 	}
 }
@@ -27,6 +26,11 @@
 	align-items: center;
 }
 
+#card > p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 #card > header {
 	font-weight: bold;
@@ -35,13 +39,8 @@
 	grid-column-end: 3;
 }
 
-.cardSpan {
-	grid-row-start: 2;
-	grid-row-end:100;
-}
-
 #card img {
-	height: 70%;
+	width: 70%;
 	border-radius: 50%;
 	box-shadow: 0 0 1vw grey;
 }

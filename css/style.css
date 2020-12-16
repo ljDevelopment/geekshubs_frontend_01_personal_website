@@ -43,6 +43,7 @@ nav > ul > li {
 	max-width: 90%;
 	min-width: 300px;
 	margin-top: 3em;
+	min-height: calc(100vh - 4.5em)
 }
 
 article > header {

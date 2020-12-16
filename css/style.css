@@ -73,6 +73,8 @@ a.anchor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-block: 0;
+    padding-inline: 0;
 }
 
 @media (min-width: 500px) {
@@ -84,9 +86,15 @@ a.anchor {
 
 #bigBullets > ul > li {
 	list-style-type: none;
-	background-color: red;
 	width: 60%;
 	margin: 5px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	max-width: 150px;
+	background-position: center;
+	box-shadow: 0 0 10px 3px rgb(0 0 0 / 30%)
 }
 
 @media (min-width: 500px) {
@@ -95,9 +103,26 @@ a.anchor {
 	}
 }
 
+#bigBullets > ul > li > a {
+	width: 100%;
+	text-decoration: none;
+}
+
 #bigBullets > ul > li::before {
 	content: "";
 	padding-bottom: 100%;
 	display: inline-block;
 	vertical-align: top;
   }
+
+#bulletManagement {
+	background-image: url('../img/bulletManager.jpg');
+}
+
+#bulletVideogames {
+	background-image: url('../img/bulletVideogames.jpg');
+}
+
+#bulletFullstack {
+   background-image: url('../img/bulletFullstack.jpg');
+}

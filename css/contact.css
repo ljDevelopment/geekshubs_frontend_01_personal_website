@@ -8,9 +8,8 @@
 	border-radius: 0.5em;
 	margin: 3em auto 3em auto;
 	background-color: rgba(0, 0, 0, 0.007);
-	height: 100px;
+	height: 150px;
     width: 90%;
-    max-width: 180px;
 }
 
 
@@ -42,7 +41,7 @@
 }
 
 #card img {
-	height: 85%;
+	height: 70%;
 	border-radius: 50%;
 	box-shadow: 0 0 1vw grey;
 }

@@ -1,6 +1,6 @@
 
 body {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 } 
@@ -62,16 +62,11 @@ a.anchor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	font-size: 0.5em;
 	padding: 1em 0 1em 0;
 }
 
-@media (min-width: 500px) {
-	#foot {
-		flex-direction: row;
-		justify-content: space-around
-	}	
-}
 
 #bigBullets > ul {
 	display: flex;

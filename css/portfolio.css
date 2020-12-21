@@ -1,0 +1,59 @@
+
+.container {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+article {
+	font-size: inherit;
+	border: solid thin black;
+	text-align: right;
+}
+
+
+article > header {
+	font-weight: unset;
+	margin: 0.4em;
+}
+
+@media (min-width: 500px) {
+	.container {
+		max-height: 1000px;
+	}
+	
+	article {
+		width: 50%;
+	}	
+
+	.pf_it1 {
+		order: 1;
+	}
+
+	.pf_it2 {
+		order: 5;
+	}
+
+	.pf_it3 {
+		order: 2;
+	}
+
+	.pf_it4 {
+		order: 6;
+	}
+
+	.pf_it5 {
+		order: 3;
+	}
+
+	.pf_it6 {
+		order: 7;
+	}
+
+	.pf_it7 {
+		order: 4;
+	}
+
+	.pf_it8 {
+		order: 8;
+	}
+}

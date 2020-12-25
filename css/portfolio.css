@@ -5,16 +5,55 @@
 }
 
 article {
-	font-size: inherit;
+	font-size: initial;
 	border: solid thin black;
 	text-align: right;
+	color: grey;
+	background-position: center;
 }
 
 
 article > header {
-	font-weight: unset;
 	margin: 0.4em;
 }
+
+.pf_it1 {
+	background-image: url('../img/holodicom.png');
+	min-height: 250px;
+}
+
+.pf_it2 {
+	background-image: url('../img/carrefourJuguetes.png');
+	min-height: 350px;
+}
+
+.pf_it3 {
+	background-image: url('../img/santillanaMaya.png');
+	height: 225px;
+}
+
+.pf_it4 {
+	background-image: url('../img/khinn.png');
+	min-height: 350px;
+}
+
+.pf_it5 {
+	/* https://www.behance.net/gallery/73241139/TOROFUN-Social-games */
+	background-image: url('../img/torofun.png');
+	height: 226px;
+}
+
+.pf_it6 {
+	/*  http://www.zoomart.es/portfolio/metallicars-videogame */
+	background-image: url('../img/metallicars.png');
+	min-height: 200px;
+}
+
+.pf_it7 {
+	background-image: url('../img/lakento.png');
+	height: 180px;
+}
+
 
 @media (min-width: 500px) {
 	.container {
@@ -51,9 +90,5 @@ article > header {
 
 	.pf_it7 {
 		order: 4;
-	}
-
-	.pf_it8 {
-		order: 8;
 	}
 }

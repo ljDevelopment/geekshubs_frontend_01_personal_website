@@ -2,20 +2,20 @@
 .container {
 	display: flex;
 	flex-flow: column wrap;
+	overflow: auto;
 }
 
 article {
 	font-size: initial;
-	border: solid thin black;
+	padding: 5px;
+	margin: 0.5em;
 	text-align: right;
-	color: grey;
+	color: rgb(255, 255, 255);
 	background-position: center;
+	box-sizing: border-box;
+	text-shadow: 1px 0px 1px black;
 }
 
-
-article > header {
-	margin: 0.4em;
-}
 
 .pf_it1 {
 	background-image: url('../img/holodicom.png');
@@ -51,13 +51,13 @@ article > header {
 
 .pf_it7 {
 	background-image: url('../img/lakento.png');
-	height: 180px;
+	height: 280px;
 }
 
 
 @media (min-width: 500px) {
 	.container {
-		max-height: 1000px;
+		max-height: 1200px;
 	}
 	
 	article {
@@ -69,15 +69,15 @@ article > header {
 	}
 
 	.pf_it2 {
-		order: 5;
-	}
-
-	.pf_it3 {
 		order: 2;
 	}
 
-	.pf_it4 {
+	.pf_it3 {
 		order: 6;
+	}
+
+	.pf_it4 {
+		order: 5;
 	}
 
 	.pf_it5 {

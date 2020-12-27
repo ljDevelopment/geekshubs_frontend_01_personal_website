@@ -2,7 +2,6 @@
 .container {
 	display: flex;
 	flex-flow: column wrap;
-	overflow: auto;
 }
 
 article {

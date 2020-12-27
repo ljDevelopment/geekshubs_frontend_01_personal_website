@@ -16,6 +16,18 @@ nav {
 	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
 }
 
+nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0;
+}
+
+nav > ul > li {
+	list-style-type: none;
+	padding: 0 0.5em 0 0.5em;
+}
+
 #goUp {
 	position: fixed;
 	bottom: 4em;
@@ -36,24 +48,10 @@ nav {
 	background-color: darkgray;
 }
 
-
-
 html:not([data-scroll='0']) #goUp {
 	display: flex;
 	justify-content: center;
     align-items: center;
-}
-
-nav > ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin: 0;
-}
-
-nav > ul > li {
-	list-style-type: none;
-	padding: 0 0.5em 0 0.5em;
 }
 
 .container {
@@ -84,63 +82,4 @@ a.anchor {
 	justify-content: center;
 	font-size: 0.5em;
 	padding: 1em 0 1em 0;
-}
-
-
-#bigBullets > ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-block: 0;
-    padding-inline: 0;
-}
-
-@media (min-width: 500px) {
-	#bigBullets > ul {
-		flex-direction: row;
-		justify-content: space-around
-	}	
-}
-
-#bigBullets > ul > li {
-	list-style-type: none;
-	width: 60%;
-	margin: 5px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	max-width: 150px;
-	background-position: center;
-	box-shadow: 0 0 10px 3px rgb(0 0 0 / 30%)
-}
-
-@media (min-width: 500px) {
-	#bigBullets > ul > li {
-		width: 30%;
-	}
-}
-
-#bigBullets > ul > li > a {
-	width: 100%;
-	text-decoration: none;
-}
-
-#bigBullets > ul > li::before {
-	content: "";
-	padding-bottom: 100%;
-	display: inline-block;
-	vertical-align: top;
-  }
-
-#bulletManagement {
-	background-image: url('../img/bulletManager.jpg');
-}
-
-#bulletVideogames {
-	background-image: url('../img/bulletVideogames.jpg');
-}
-
-#bulletFullstack {
-   background-image: url('../img/bulletFullstack.jpg');
 }

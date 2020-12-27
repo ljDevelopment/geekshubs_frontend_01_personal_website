@@ -1,5 +1,9 @@
+.container {
+	font-size: initial;
+}
+
 #card {
-	font-size: 0.6em;
+	font-size: 0.9em;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 2em 1fr;

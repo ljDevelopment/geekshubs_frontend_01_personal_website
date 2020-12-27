@@ -21,9 +21,27 @@ nav {
 	bottom: 4em;
 	right: 2em;
 	display: none;
+	border-radius: 50%;
+    height: 3em;
+	width: 3em;
+	border: solid 1px lightgrey;
+	background-color: rgb(202, 202, 202);
 }
+
+#goUp:hover {
+	background-color: #d3d3d3;
+}
+
+#goUp:active {
+	background-color: darkgray;
+}
+
+
+
 html:not([data-scroll='0']) #goUp {
-	display: block;
+	display: flex;
+	justify-content: center;
+    align-items: center;
 }
 
 nav > ul {

@@ -2,7 +2,7 @@
 
 document.body.innerHTML += 
 	'<footer id=\'foot\'>'
-	+ '<input type="button" id="goUp" onclick="resetScroll()" value="Up" />'
+	+ '<a type="button" id="goUp" onclick="resetScroll()">&#8679;</a>'
 		+ '<span>'
 		+ '&copy;' + new Date().getFullYear() + ' Luis Javier López Arredondo'
 	+ '</span>'
